@@ -213,6 +213,8 @@
                 <li>
                     <a title="link" href="http://sys-krng.xyz/admin/index.php?page=data_timbangkpcc" target="_BLANK" ><i class="ti-printer"></i>Cetak KPCC</a>
                 </li>
+                <li><hr></li>
+                <li><a title="link" href="#uploadfile" id="menuupload"><i class="ti-image"></i>Upload File</a></li>
             </ul>
         </div>
         <span class="selector"></span>
@@ -596,6 +598,39 @@
     </section>
 
 
+    <!-- Section / Upload File -->
+    <section id="uploadfile" class="section">
+
+        <div class="container container-lg">
+
+            <div class="row rowmain">
+                <div class="col-md-7">
+                    <h2>Upload File</h2>
+                    <hr />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <form id="uploadForm">
+                        <input type="file" id="uploadFileInput" name="file" required>
+                        <button type="submit" id="uploadSubmit">Unggah</button>
+                        <p id="uploadInfo"></p>
+                    </form>
+                    <br>
+                    <table id="uploadList" border="1" width="100%">
+                        <tr>
+                            <th style="text-align:center;">Nama File</th>
+                            <th style="text-align:center;">Waktu Unggah</th>
+                            <th style="text-align:center;">Aksi</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- Section / Contact -->
     <section id="contact" class="section min-fullheight">
 
@@ -654,6 +689,9 @@
 
 <!-- <script src='../assets/js/main.js'></script> -->
 <script src="assets/js/typed.js"></script>
+
+<!-- Upload File -->
+<script src="upload.js"></script>
 
 		<!-- <script type="text/javascript" src="jquery.simplemodal.1.4.4.min.js"></script> --> 
 
